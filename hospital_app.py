@@ -295,7 +295,10 @@ with st.form("triage_form"):
     with col_gen:
         gender = st.selectbox("Gender", options=["Female", "Male"])
 
-    submitted = st.form_submit_button("Get AI Recommendation →")
+    submitted = st.form_submit_button(
+        """   <div style="height: 50px; width: 300px; background: #355fd3; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; cursor: pointer;">Get AI Recommendation →</div>
+        """
+    )
 
 # ── Result ────────────────────────────────────────────────────────────────────
 if submitted:
