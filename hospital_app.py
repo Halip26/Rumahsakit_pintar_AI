@@ -48,7 +48,7 @@ div[data-testid="stCheckbox"] label {
 # === Code Here ===
 def load_model():
     # rb is read binary mode
-    with open("hospital_model_by_halip26.pkl", "rb") as f:
+    with open("assets/hospital_model_by_halip26.pkl", "rb") as f:
         return pickle.load(f)
 
 
